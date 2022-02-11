@@ -20,6 +20,17 @@ function getJoke() {
         })
 }
 
+// Headers notes***
+/*
+These are methods we can use with Header opbjects. Some are used on response and some are used on request.
+append() - add something to the headers object
+delete() - delete
+get()- Retrieve a value
+has() - To check if it has a specific header
+values() - All the values from all the headers
+keys() - An array of all the keys
+entries() - This gives an array of the arrays. It will return a key and a value.
+set() - This let's you set the value for a header.
 /*
 async function getJoke() {
     const response = await fetch('https://icanhazdadjoke.com/', {
