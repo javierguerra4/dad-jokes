@@ -1,12 +1,22 @@
 'use strict'
 const button = document.querySelector('.container button');
 const jokeText = document.querySelector('.container p');
-// The event listener is invoking the function upon page load
+// The event listener is invoking the  getJoke function upon page load
 document.addEventListener('DOMContentLoaded', getJoke)
 
 
 button.addEventListener('click', getJoke);
 
+function getJoke() {
+    fetch('https://icanhazdadjoke.com/', {
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(data => data.json())
+        .then(obj => jokeText.innerHTML = obj.joke)
+}
+
+/*
 async function getJoke() {
     const response = await fetch('https://icanhazdadjoke.com/', {
         headers: {
@@ -18,3 +28,4 @@ async function getJoke() {
     // console.log(jokeObj.joke)
     jokeText.innerHTML = jokeObj.joke;
 }
+*/
