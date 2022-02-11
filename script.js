@@ -1,9 +1,15 @@
 'use strict'
-let response = fetch('https://icanhazdadjoke.com/')
-    .then(response => {
-        console.log(response)
-    })
-    .catch(error => {
-        console.log('You have an error')
-    })
+const button = document.querySelector('.container button');
+const jokeText = document.querySelector('.container p');
 
+button.addEventListener('click', getJoke);
+
+async function getJoke() {
+    const response = await fetch('https://icanhazdadjoke.com/', {
+        headers: {
+            'Accept': 'application/json'
+        }
+    });
+    const jokeObj = await response.json();
+    console.log(jokeObj)
+}
