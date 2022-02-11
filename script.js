@@ -12,8 +12,12 @@ function getJoke() {
         headers: {
             'Accept': 'application/json'
         }
+        // This will will turn the data into json format and get the object.
     }).then(data => data.json())
         .then(obj => jokeText.innerHTML = obj.joke)
+        .catch((error) => {
+            console.log('Error')
+        })
 }
 
 /*
