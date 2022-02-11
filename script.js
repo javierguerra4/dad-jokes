@@ -9,6 +9,7 @@ button.addEventListener('click', getJoke);
 
 function getJoke() {
     fetch('https://icanhazdadjoke.com/', {
+        // We are accepting the header 'application/json' as it says in the documentation.
         headers: {
             'Accept': 'application/json'
         }
