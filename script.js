@@ -11,5 +11,7 @@ async function getJoke() {
         }
     });
     const jokeObj = await response.json();
-    console.log(jokeObj)
+    // **Remember that it returns an object so jokeObj.joke will return only the joke
+    // console.log(jokeObj.joke)
+    jokeText.innerHTML = jokeObj.joke;
 }
