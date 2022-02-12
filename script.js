@@ -1,6 +1,6 @@
 'use strict'
-const button = document.querySelector('.container button');
-const jokeText = document.querySelector('.container p');
+const button = document.querySelector('.main button');
+const jokeText = document.querySelector('.main p');
 // The event listener is invoking the  getJoke function upon page load
 document.addEventListener('DOMContentLoaded', getJoke)
 

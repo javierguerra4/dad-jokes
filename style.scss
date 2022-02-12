@@ -1,10 +1,10 @@
-.hb-header{
-    position:relative;
-    background-color: red;
+@import './variable';
 
-    .header-wrapper{
-        margin:0 auto;
-        max-width: 1024px;
-        background-color: blue;
-    }
+body{
+    background: blue;
+    color: $text-color;
+}
+.main {
+    width: 100%;
+    margin: 0 auto;
 }
