@@ -1,5 +1,11 @@
 @import './variable';
 
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body{
     background: blue;
     color: $text-color;
