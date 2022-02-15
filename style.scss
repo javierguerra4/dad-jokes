@@ -1,10 +1,28 @@
 @import './variable';
 
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content
+    }
+}
+
 body{
     background: blue;
     color: $text-color;
+    @include flexCenter(column);
 }
 .main {
     width: 100%;
     margin: 0 auto;
+
+    // This is including the mixin created named mobile and is setting the main content to column view if it gets under 800px
+    @include mobile{
+        flex-direction: column;
+    }
 }
