@@ -6,6 +6,11 @@
     align-items: center;
     flex-direction: $direction;
 }
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content
+    }
+}
 
 body{
     background: blue;
