@@ -20,4 +20,9 @@ body{
 .main {
     width: 100%;
     margin: 0 auto;
+
+    // This is including the mixin created named mobile and is setting the main content to column view if it gets under 800px
+    @include mobile{
+        flex-direction: column;
+    }
 }
