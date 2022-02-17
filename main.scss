@@ -1,3 +1,11 @@
+@import "/scss/fontawesome.scss";
+@import "/scss/solid.scss";
+@import "/scss/brands.scss";
+
+// for Duotones need both files
+@import "/scss/duotone.scss";
+@import "/scss/_duotone-icons.scss";
+
 @import './variable';
 
 @mixin flexCenter($direction){
