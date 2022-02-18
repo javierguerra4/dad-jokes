@@ -1,11 +1,7 @@
-@import "/scss/fontawesome.scss";
-@import "/scss/solid.scss";
-@import "/scss/brands.scss";
+@import "scss/fontawesome.scss";
+@import "scss/solid.scss";
+@import "scss/brands.scss";
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-
-// for Duotones need both files
-@import "/scss/duotone.scss";
-@import "/scss/_duotone-icons.scss";
 
 @import './variable';
 
