@@ -9223,7 +9223,8 @@ readers do not read off random characters that represent icons */
 }
 
 body {
-  background: blue;
+  background: -webkit-gradient(linear, left top, right top, from(#8e2de2), to(#4a00e0));
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
