@@ -58,3 +58,7 @@ h1 {
    .btn-blue {
     @include button-bg(#3498db);
  }
+ .joke {
+    font-family: $poiret-one;
+    font-size:2em;
+ }

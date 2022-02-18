@@ -9282,4 +9282,9 @@ h1 {
 .btn-blue:active {
   background: #16527a;
 }
+
+.joke {
+  font-family: "Poiret One";
+  font-size: 2em;
+}
 /*# sourceMappingURL=main.css.map */
