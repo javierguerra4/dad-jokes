@@ -9259,4 +9259,27 @@ h1 {
   font-family: "Poiret One", cursive;
   font-size: 4em;
 }
+
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-family: "Poiret One", cursive;
+  font-size: 2em;
+}
+
+.btn-blue {
+  background: #3498db;
+}
+
+.btn-blue:hover {
+  background: #2383c4;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-blue:active {
+  background: #16527a;
+}
 /*# sourceMappingURL=main.css.map */

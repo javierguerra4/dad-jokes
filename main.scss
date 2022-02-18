@@ -16,6 +16,16 @@
         @content
     }
 }
+@mixin button-bg($bg) {
+    background: $bg;
+    &:hover {
+      background:darken($bg,8%);
+      transition: all 0.3s ease;
+    }
+    &:active {
+      background:darken($bg,25%);
+    } 
+  }
 
 body{
     background: linear-gradient(to right, #8e2de2, #4a00e0);
@@ -36,3 +46,15 @@ h1 {
     font-family: $poiret-one, cursive;
     font-size:4em;
   }
+
+  .btn {
+    color:white;
+    text-decoration:none;
+    padding:5px 10px;
+    border-radius:3px;
+    font-family: $poiret-one, cursive;
+    font-size:2em;
+   }
+   .btn-blue {
+    @include button-bg(#3498db);
+ }
