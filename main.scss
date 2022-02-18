@@ -2,6 +2,7 @@
 @import "/scss/solid.scss";
 @import "/scss/brands.scss";
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
 // for Duotones need both files
 @import "/scss/duotone.scss";
 @import "/scss/_duotone-icons.scss";
@@ -34,3 +35,8 @@ body{
         flex-direction: column;
     }
 }
+
+h1 {
+    font-family: $poiret-one, cursive;
+    font-size:4em;
+  }
